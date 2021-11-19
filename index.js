@@ -122,7 +122,7 @@ function nodeMouseOver(event, d){
 // .attr("test-anchor","end")
 }
 
-d3.csv("boston_311.csv", d3.autoType).then((data)=>{
+d3.csv("data/boston_311.csv", d3.autoType).then((data)=>{
     dataset = data
     // dataset.sort(function(x, y){
     //     return d3.ascending(x.index, y.index);
