@@ -124,8 +124,8 @@ function nodeMouseOver(event, d){
 
 d3.csv("boston_311.csv", d3.autoType).then((data)=>{
     dataset = data
-    cities.sort(function(x, y){
-        return d3.ascending(x.index, y.index);
-     })
+    // dataset.sort(function(x, y){
+    //     return d3.ascending(x.index, y.index);
+    //  })
     //console.log(data);
     ready(data)});
