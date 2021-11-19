@@ -124,8 +124,6 @@ function nodeMouseOver(event, d){
 
 d3.csv("data/boston_311.csv", d3.autoType).then((data)=>{
     dataset = data
-    // dataset.sort(function(x, y){
-    //     return d3.ascending(x.index, y.index);
-    //  })
-    //console.log(data);
+    dataset.sort((a, b) => d3.ascending(a.total_count, b.total_count));
+    //console.log(dataset)
     ready(data)});
