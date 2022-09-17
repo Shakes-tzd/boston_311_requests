@@ -19,9 +19,7 @@ const toolTip = d3.select("body")
                     .append("div")
                     .attr("class", "toolTip")
 
-
 let ready= (data)=>{
-
 
 // Set up X scale
 const xArray = data.map(d => d.columnName);
@@ -50,8 +48,6 @@ svg.append("g")
     .attr('stroke-width', 1) // remove axis line
     .attr("class", "label-styling")
 
-
-
 // add rectangle bars
 
 
@@ -68,8 +64,6 @@ svg.append("g")
         .attr("fill", "teal")
         .attr("opacity", "1")
         ;
-
-
 
 // Add title to chart
 svg.append("text")
@@ -108,18 +102,6 @@ function nodeMouseOver(event, d){
     
     }
     
-
-// create percentages
-// svg.append("g")
-// .attr("class", "label-styling")
-// .selectAll("text")
-// .data(data)
-// .enter()
-// .append("text")
-// .attr("y", d => y(d.Name) + y.bandwidth()*0.65)
-// .attr("x", d => d[1] * widthMultiplier+ 5)
-// .text(d =>String(d[1])+'%')
-// .attr("test-anchor","end")
 }
 
 d3.csv("data/boston_311.csv", d3.autoType).then((data)=>{

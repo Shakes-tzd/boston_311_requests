@@ -13,10 +13,15 @@
         <main>
 		<section class="container">
 			<div class="row">
-				<h1>Visualizing Boston 311 Data</h1>
+				<h1>Boston 311 Data</h1>
 				<hr size="8" width="85%" > 
-
 			</div>
+			<div class="row">
+				<div >
+					<p>311 is the non-emergency phone number and web portal for the City of Boston. Residents can use 311 to request City services, such as trash and recycling pickup, pothole repair, and more. The City of Boston makes this data available to the public, and we can use it to visualize trends in requests over time.</p>
+					<p>D3 is used to visualize the number of 311 requests over time. The <a href="https://data.boston.gov/dataset/311-service-requests">311 Service Requests</a> dataset is used, which contains data on all 311 requests from 2015 to the present. The dataset can be downloaded as a CSV file. Alternatively the <a href="https://data.boston.gov/dataset/311-service-requests">API</a> can be used to retrieve the data programmatically.</p>
+					</div>
+
 			<div class="row">
 				<div id="viz"></div>
 					<p>
@@ -24,8 +29,18 @@
 						
 					</p>
 					
-					<h3>Big Data, Visualization, and Society	
-					</h3>
+					<h3>Going the Extra Mile</h3>
+					<p>
+						The above visualization shows the total number of the number of 311 requests over time. The total count is a combination of requests form the 
+						<strong>Citizens_Connect_App</strong>, 
+						<strong>City_Worker_App</strong>,
+						<strong>Constituent_Call</strong>, 
+						<strong>Employee_Generated</strong>, 
+						<strong>twitter</strong>, and 
+						<strong>Self_Service</strong>. 
+						The visualization is interactive, and the user can select a date range to filter the data. The visualization is also responsive, and will adjust to the size of the browser window. 
+						<a href="plotly_index.html">HTML tutorial</a>
+					</p>
 
 					<p>
 					<strong> Course:</strong><b> 11.154/11.454</b> <br>
