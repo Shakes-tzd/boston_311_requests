@@ -2,11 +2,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>PSET8-D3 Visualization with External Data</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="jquery.js"></script> 
+		<script> 
+		$(function(){
+		  $("#includedContent").load("plotly_index.html"); 
+		});
+		</script> 
+		
 		</head>
 		<body>
 			
@@ -38,15 +47,11 @@
 						<strong>Employee_Generated</strong>, 
 						<strong>twitter</strong>, and 
 						<strong>Self_Service</strong>. 
-						The visualization is interactive, and the user can select a date range to filter the data. The visualization is also responsive, and will adjust to the size of the browser window. 
-						<a href="plotly_index.html">HTML tutorial</a>
+						Consequently, <strong>Plotly</strong>  is used to create the plot below which shows the breakdown of the total in to the different call sources. The visualization is interactive, and the user can zoom in to figure out the breakdown for a specific neighborhood. The visualization is also responsive, and will adjust to the size of the browser window. 
+						
 					</p>
-
-					<p>
-					<strong> Course:</strong><b> 11.154/11.454</b> <br>
-					<strong> Theme:</strong><b> Central American Migration</b><br>
-					<strong> Assignment:</strong><b> PSET8-D3 Visualization with External Data</b><br>
-					<strong> Author:</strong><b> Thandolwethu Dlamini </b> </p>
+					<div id="includedContent"></div>
+					
 
 
 			</div>
@@ -54,6 +59,11 @@
 		</section>
 
         </main>
+		<footer class="footer mt-auto py-3">
+			<div >
+				<strong> Author:</strong><b> Thandolwethu (Shakes) Dlamini </b> </p>
+			</div>
+		  </footer>
 		<script src= 'index.js' type="text/javascript">
            
 		</script>
